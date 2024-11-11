@@ -61,13 +61,13 @@
         </dependency>
 
         <dependency>
-            <groupId>com.tsts.demo</groupId>
-            <artifactId>module</artifactId>
+            <groupId>com.dist.interview</groupId>
+            <artifactId>javacc-service-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.dist.interview</groupId>
-            <artifactId>javacc</artifactId>
+            <artifactId>javacc-dal-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
