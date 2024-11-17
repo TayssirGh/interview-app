@@ -5,7 +5,16 @@ import net.thevpc.nuts.NSession;
 import net.thevpc.nuts.io.NPrintStream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+@ComponentScan(basePackages = {
+        "com.dist.interview.javacc.dal.mongodb",
+        "com.dist.interview.javacc.infra",
+        "com.dist.interview.javacc.serviceimpl",
+        "com.dist.interview.javacc.wsrest"
 
+})
+@EnableMongoRepositories(basePackages = "com.dist.interview.javacc.dal.mongodb.repo")
 @SpringBootApplication
 public class InterviewApplication implements NApplication {
 
@@ -18,3 +27,4 @@ public class InterviewApplication implements NApplication {
         out.println("Let's get it started \uD83D\uDE80\uD83D\uDE80");
     }
 }
+
