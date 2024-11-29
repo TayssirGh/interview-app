@@ -44,7 +44,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
-        <dependency>
+
+       <dependency>
             <groupId>net.thevpc.nuts.lib</groupId>
             <artifactId>nlib-spring-boot</artifactId>
             <version>0.8.5.0</version>
@@ -62,7 +63,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
+        
+       <dependency>
             <groupId>net.thevpc.nuts</groupId>
             <artifactId>nuts-api</artifactId>
             <version>0.8.5</version>
@@ -73,7 +75,7 @@
             <optional>true</optional>
         </dependency>
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.dist.interview</groupId>
             <artifactId>javacc-service-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
@@ -103,7 +105,12 @@
             <artifactId>javacc-ws-rest</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
+        <################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
+<dependency>
+    <groupId>net.thevpc.nuts</groupId>
+    <artifactId>nuts-runtime</artifactId>
+    <version>0.8.5.0</version>
+</dependency>
 
     </dependencies>
 
