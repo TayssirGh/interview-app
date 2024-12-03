@@ -73,36 +73,38 @@
             <optional>true</optional>
         </dependency>
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-service-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-service-impl</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-dal-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>dal-mongodb</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-infra</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-ws-rest</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
+        <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
+<!--        <dependency>-->
+<!--            <groupId>com.dist.interview</groupId>-->
+<!--            <artifactId>javacc-service-api</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.dist.interview</groupId>-->
+<!--            <artifactId>javacc-service-impl</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.dist.interview</groupId>-->
+<!--            <artifactId>javacc-dal-api</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.dist.interview</groupId>-->
+<!--            <artifactId>dal-mongodb</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.dist.interview</groupId>-->
+<!--            <artifactId>javacc-infra</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.dist.interview</groupId>-->
+<!--            <artifactId>javacc-ws-rest</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
 
     </dependencies>
