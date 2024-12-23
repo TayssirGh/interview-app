@@ -75,7 +75,7 @@
             <optional>true</optional>
         </dependency>
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.dist.interview</groupId>
             <artifactId>javacc-service-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
@@ -105,7 +105,7 @@
             <artifactId>javacc-ws-rest</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
+        <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
 <dependency>
     <groupId>net.thevpc.nuts</groupId>
     <artifactId>nuts-runtime</artifactId>
