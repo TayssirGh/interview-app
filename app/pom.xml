@@ -87,11 +87,6 @@
         </dependency>
         <dependency>
             <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-dal-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
             <artifactId>dal-mongodb</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -113,5 +108,8 @@
 </dependency>
 
     </dependencies>
-
+    <repositories>
+        <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
+        <repository><id>github</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/Parse2Hire</url><snapshots><enabled>true</enabled></snapshots></repository>
+    </repositories>
 </project>
