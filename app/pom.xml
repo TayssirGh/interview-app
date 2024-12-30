@@ -75,7 +75,7 @@
             <optional>true</optional>
         </dependency>
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.dist.interview</groupId>
             <artifactId>javacc-service-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
@@ -83,11 +83,6 @@
         <dependency>
             <groupId>com.dist.interview</groupId>
             <artifactId>javacc-service-impl</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-dal-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -105,7 +100,7 @@
             <artifactId>javacc-ws-rest</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
+        <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
 <dependency>
     <groupId>net.thevpc.nuts</groupId>
     <artifactId>nuts-runtime</artifactId>
@@ -113,5 +108,8 @@
 </dependency>
 
     </dependencies>
-
+    <repositories>
+        <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
+        <repository><id>github</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/Parse2Hire</url><snapshots><enabled>true</enabled></snapshots></repository>
+    </repositories>
 </project>
