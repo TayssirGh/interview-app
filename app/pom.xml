@@ -83,6 +83,12 @@
         <dependency>
             <groupId>com.dist.interview</groupId>
             <artifactId>javacc-service-impl</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.dist.interview</groupId>
+                    <artifactId>javacc-dal-api</artifactId>
+                </exclusion>
+            </exclusions>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

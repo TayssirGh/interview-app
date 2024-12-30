@@ -5,9 +5,7 @@ import net.thevpc.nuts.io.NPrintStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-@EnableMongoRepositories(basePackages = "com.dist.interview.javacc.dal.mongodb.repo")
 @SpringBootApplication
 public class InterviewApplication implements NApplication {
     @Autowired
