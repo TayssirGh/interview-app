@@ -1,15 +1,15 @@
 package com.dist.interview.core.service.impl.service;
 
+import net.thevpc.nuts.util.NAssert;
+import net.thevpc.nuts.util.NMsg;
+import net.thevpc.nuts.util.NOptional;
 import com.dist.interview.core.dal.entity.AppUserEntity;
 import com.dist.interview.core.dal.entity.AppUserRoleEntity;
 import com.dist.interview.core.dal.repository.AppUserEntityRepository;
 import com.dist.interview.core.dal.repository.AppUserRoleEntityRepository;
-import com.dist.interview.core.infra.model.entity.AppUser;
-import com.dist.interview.core.infra.model.entity.AppUserRole;
-import com.dist.interview.core.infra.model.payload.VersionResponse;
-import net.thevpc.nuts.util.NAssert;
-import net.thevpc.nuts.util.NMsg;
-import net.thevpc.nuts.util.NOptional;
+import com.dist.interview.core.model.entity.AppUser;
+import com.dist.interview.core.model.entity.AppUserRole;
+import com.dist.interview.core.model.payload.VersionResponse;
 import com.dist.interview.core.service.impl.converter.AppUserConverter;
 import com.dist.interview.core.service.impl.converter.AppUserRoleConverter;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,8 @@
 package com.dist.interview.core.web.config;
 
-import com.dist.interview.core.infra.App;
-import com.dist.interview.core.infra.model.common.AppException;
-import com.dist.interview.core.infra.model.common.AppExceptionInfo;
+import com.dist.interview.core.App;
+import com.dist.interview.core.model.common.AppException;
+import com.dist.interview.core.model.common.AppExceptionInfo;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 

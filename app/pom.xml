@@ -16,106 +16,42 @@
     <properties>
         <java.version>17</java.version>
     </properties>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.3.5</version>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
 
-       <dependency>
-            <groupId>net.thevpc.nuts.lib</groupId>
-            <artifactId>nlib-spring-boot</artifactId>
-            <version>0.8.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-test</artifactId><scope>test</scope></dependency>
+        <dependency><groupId>org.springframework.security</groupId><artifactId>spring-security-test</artifactId><scope>test</scope></dependency>
+        <dependency><groupId>org.postgresql</groupId><artifactId>postgresql</artifactId><scope>runtime</scope></dependency>
+        <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
 
-       <dependency>
-            <groupId>net.thevpc.nuts</groupId>
-            <artifactId>nuts-api</artifactId>
-            <version>0.8.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
+
+        <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-autoconfigure</artifactId></dependency>
+        <dependency><groupId>net.thevpc.nuts.lib</groupId><artifactId>nlib-spring-boot</artifactId><version>0.8.5.0</version></dependency>
+        <dependency><groupId>net.thevpc.nuts</groupId><artifactId>nuts-api</artifactId><version>0.8.5</version></dependency>
+        <dependency><groupId>net.thevpc.nuts</groupId><artifactId>nuts-runtime</artifactId><version>0.8.5.0</version></dependency>
+
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-service-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-service-api</artifactId><version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-service-impl</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.dist.interview</groupId>
-                    <artifactId>javacc-dal-api</artifactId>
-                </exclusion>
-            </exclusions>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.dist.interview</groupId><artifactId>javacc-service-impl</artifactId>
+            <exclusions><exclusion><groupId>com.dist.interview</groupId><artifactId>javacc-dal-api</artifactId></exclusion></exclusions><version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>dal-mongodb</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-infra</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dist.interview</groupId>
-            <artifactId>javacc-ws-rest</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        <dependency><groupId>com.dist.interview</groupId><artifactId>dal-mongodb</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-infra</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-<dependency>
-    <groupId>net.thevpc.nuts</groupId>
-    <artifactId>nuts-runtime</artifactId>
-    <version>0.8.5.0</version>
-</dependency>
 
+        <!--################################################## core modules #################################################################-->
+<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-infra</artifactId><version>1.0.0</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-dal</artifactId><version>1.0.0</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-ws-rest</artifactId><version>1.0.0</version></dependency>-->
+        <!--################################################## core modules #################################################################-->
     </dependencies>
     <repositories>
         <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
-        <repository><id>github</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/Parse2Hire</url><snapshots><enabled>true</enabled></snapshots></repository>
+        <repository><id>github-p2h</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/Parse2Hire</url><snapshots><enabled>true</enabled></snapshots></repository>
+        <repository><id>github-core</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/interview-app</url><snapshots><enabled>true</enabled></snapshots></repository>
     </repositories>
 </project>

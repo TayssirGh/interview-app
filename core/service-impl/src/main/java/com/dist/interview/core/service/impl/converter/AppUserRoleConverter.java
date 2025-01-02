@@ -1,7 +1,7 @@
 package com.dist.interview.core.service.impl.converter;
 
 import com.dist.interview.core.dal.entity.AppUserRoleEntity;
-import com.dist.interview.core.infra.model.entity.AppUserRole;
+import com.dist.interview.core.model.entity.AppUserRole;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
