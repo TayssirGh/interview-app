@@ -1,6 +1,6 @@
 package com.dist.interview.core.web.config;
 
-import com.dist.interview.core.infra.App;
+import com.dist.interview.core.App;
 import jakarta.servlet.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

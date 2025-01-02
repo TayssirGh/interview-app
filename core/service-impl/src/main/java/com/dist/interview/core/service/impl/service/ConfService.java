@@ -1,8 +1,8 @@
 package com.dist.interview.core.service.impl.service;
 
+import com.dist.interview.core.ann.Secret;
 import com.dist.interview.core.dal.entity.AppConfEntity;
 import com.dist.interview.core.dal.repository.AppConfEntityRepository;
-import com.dist.interview.core.infra.ann.Secret;
 import com.dist.interview.core.service.impl.security.AppSecurityUtils;
 import net.thevpc.nuts.util.NAssert;
 import net.thevpc.nuts.util.NOptional;

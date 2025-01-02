@@ -16,10 +16,17 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version></dependency>
+		<dependency><groupId>net.thevpc.samples.springnuts</groupId><artifactId>springnuts-core-service-api</artifactId><version>1.0.0</version></dependency>
 		<dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
 		<dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-annotations</artifactId></dependency>
 		<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-security</artifactId></dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/TayssirGh/interview-app</url>
+		</repository>
+	</distributionManagement>
 
 </project>

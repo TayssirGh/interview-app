@@ -1,8 +1,8 @@
 package com.dist.interview.core.service.impl.security;
 
-import com.dist.interview.core.infra.model.common.AppPrincipal;
-import com.dist.interview.core.infra.model.entity.AppUser;
+import com.dist.interview.core.model.common.AppPrincipal;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.dist.interview.core.model.entity.AppUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

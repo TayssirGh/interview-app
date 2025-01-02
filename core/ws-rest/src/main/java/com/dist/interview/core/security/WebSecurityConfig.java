@@ -1,8 +1,8 @@
 package com.dist.interview.core.security;
 
+import com.dist.interview.core.service.impl.security.UserDetailsServiceImpl;
 import com.dist.interview.core.security.jwt.AuthEntryPointJwt;
 import com.dist.interview.core.security.jwt.AuthTokenFilter;
-import com.dist.interview.core.service.impl.security.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

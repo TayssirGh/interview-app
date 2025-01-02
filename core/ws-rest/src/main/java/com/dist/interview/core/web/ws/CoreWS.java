@@ -1,8 +1,8 @@
 package com.dist.interview.core.web.ws;
 
-import com.dist.interview.core.infra.model.payload.*;
+import com.dist.interview.core.model.payload.*;
+import com.dist.interview.core.service.api.CoreModule;
 import com.dist.interview.core.service.impl.service.AuthService;
-import com.interview.core.service.api.CoreModule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

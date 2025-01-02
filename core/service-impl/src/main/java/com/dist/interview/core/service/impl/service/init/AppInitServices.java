@@ -1,6 +1,6 @@
 package com.dist.interview.core.service.impl.service.init;
 
-import com.interview.core.service.api.AppInitService;
+import com.dist.interview.core.service.api.AppInitService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

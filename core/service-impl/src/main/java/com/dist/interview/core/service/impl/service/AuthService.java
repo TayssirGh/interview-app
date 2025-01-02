@@ -1,12 +1,12 @@
 package com.dist.interview.core.service.impl.service;
 
-import com.dist.interview.core.infra.model.common.AppException;
-import com.dist.interview.core.infra.model.entity.AppUser;
-import com.dist.interview.core.infra.model.entity.AppUserRole;
-import com.dist.interview.core.infra.model.payload.AppPrincipalResponse;
-import com.dist.interview.core.infra.model.payload.LoginRequest;
-import com.dist.interview.core.infra.model.payload.SignupRequest;
 import net.thevpc.nuts.util.NOptional;
+import com.dist.interview.core.model.common.AppException;
+import com.dist.interview.core.model.entity.AppUser;
+import com.dist.interview.core.model.entity.AppUserRole;
+import com.dist.interview.core.model.payload.AppPrincipalResponse;
+import com.dist.interview.core.model.payload.LoginRequest;
+import com.dist.interview.core.model.payload.SignupRequest;
 import com.dist.interview.core.service.impl.security.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

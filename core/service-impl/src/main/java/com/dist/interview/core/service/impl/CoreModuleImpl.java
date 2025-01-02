@@ -1,8 +1,8 @@
 package com.dist.interview.core.service.impl;
 
+import com.dist.interview.core.service.api.CoreModule;
 import com.dist.interview.core.service.impl.service.AuthService;
 import com.dist.interview.core.service.impl.service.AppUserService;
-import com.interview.core.service.api.CoreModule;
 import lombok.experimental.Delegate;
 import org.springframework.stereotype.Service;
 
