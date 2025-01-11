@@ -75,4 +75,5 @@ public class AppUserService {
         AppUserRoleEntity modRole = name == null ? null : roleRepository.findByName(name).orElse(null);
         return NOptional.ofOptional(Optional.ofNullable(AppUserRoleConverter.INSTANCE.fromEntity(modRole)), NMsg.ofC("user role %s", name));
     }
+
 }

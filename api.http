@@ -1,0 +1,2 @@
+### get candidate
+GET http://localhost:8082/candidates/ranked

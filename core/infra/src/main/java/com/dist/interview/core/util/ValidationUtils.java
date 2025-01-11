@@ -62,7 +62,7 @@ public class ValidationUtils {
         try {
             d = new SimpleDateFormat("yyyy-MM-dd").parse(date);
         } catch (ParseException e) {
-            return NOptional.ofEmpty(()-> NMsg.ofC("Invalid %s. expected date in the format yyyy-MM-dd",name ));
+            return NOptional.ofEmpty();
         }
         return NOptional.of(d.toInstant());
     }
@@ -133,7 +133,7 @@ public class ValidationUtils {
         try {
             d = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(date);
         } catch (ParseException e) {
-            return NOptional.ofEmpty(()->NMsg.ofC("Invalid %s. expected date in the format yyyy-MM-dd",name));
+            return NOptional.ofEmpty();
         }
         return NOptional.of(d);
     }

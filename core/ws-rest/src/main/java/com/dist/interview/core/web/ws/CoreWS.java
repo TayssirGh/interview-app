@@ -1,7 +1,6 @@
 package com.dist.interview.core.web.ws;
 
 import com.dist.interview.core.model.payload.*;
-import com.dist.interview.core.service.api.CoreModule;
 import com.dist.interview.core.service.impl.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 public class CoreWS {
-    @Autowired
-    private CoreModule module;
+//    @Autowired
+//    private CoreModule module;
 
     @Autowired
     private AuthService authService;
@@ -29,7 +28,7 @@ public class CoreWS {
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@RequestBody SignupRequest signUpRequest) {
-        module.signup(signUpRequest);
+        authService.signup(signUpRequest);
         return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
     }
 }

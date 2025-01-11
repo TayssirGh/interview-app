@@ -10,4 +10,5 @@ public interface AppUserRoleConverter {
     public AppUserRoleConverter INSTANCE = Mappers.getMapper(AppUserRoleConverter.class);
     public AppUserRoleEntity toEntity(AppUserRole u);
     public AppUserRole fromEntity(AppUserRoleEntity u);
+
 }
