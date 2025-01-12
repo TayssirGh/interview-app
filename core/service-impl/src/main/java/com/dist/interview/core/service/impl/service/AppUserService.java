@@ -1,5 +1,6 @@
 package com.dist.interview.core.service.impl.service;
 
+import com.dist.interview.core.service.api.CoreModule;
 import net.thevpc.nuts.util.NAssert;
 import net.thevpc.nuts.util.NMsg;
 import net.thevpc.nuts.util.NOptional;
@@ -20,7 +21,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class AppUserService {
+public class AppUserService  {
     @Autowired
     AppUserRoleEntityRepository roleRepository;
     @Autowired
@@ -28,9 +29,10 @@ public class AppUserService {
     @Autowired
     private PasswordEncoder encoder;
 
-    public VersionResponse version() {
-        return new VersionResponse();
-    }
+
+    //public VersionResponse version() {
+        //return new VersionResponse();
+    //}
 
     public void addUser(AppUser user) {
         NAssert.requireNonNull(user, "user");
