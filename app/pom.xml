@@ -48,6 +48,14 @@
 <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>-->
 <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-ws-rest</artifactId><version>1.0.0</version></dependency>-->
         <!--################################################## core modules #################################################################-->
+
+        <!--################### these are my javacc dependencies (rajet) feel free to comment them for now ##################################-->
+        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-dal</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-service-impl</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <!--################### these are my javacc dependencies (rajet) feel free to comment them for now ##################################-->
+
     </dependencies>
     <repositories>
         <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
