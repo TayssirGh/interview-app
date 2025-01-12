@@ -2,7 +2,6 @@ package com.dist.interview.core.web.ws;
 
 import com.dist.interview.core.model.payload.*;
 import com.dist.interview.core.service.api.CoreModule;
-import com.dist.interview.core.service.impl.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +12,7 @@ public class CoreWS {
     @Autowired
     private CoreModule module;
 
-    @Autowired
-    private AuthService authService;
+
 
     @RequestMapping(value = "/version",method = {RequestMethod.GET,RequestMethod.POST})
     private VersionResponse version() {
@@ -24,7 +22,7 @@ public class CoreWS {
 
     @PostMapping("/login")
     public AppPrincipalResponse authenticateUser(@RequestBody LoginRequest loginRequest) {
-        return authService.login(loginRequest);
+        return module.login(loginRequest);
     }
 
     @PostMapping("/signup")

@@ -1,0 +1,14 @@
+### get candidate
+GET http://localhost:8082/candidates/ranked
+
+
+### Login Test
+POST http://localhost:8082/signup
+Content-Type: application/json
+
+{
+  "username": "adminUser",
+  "email": "admin@example.com",
+  "password": "password123",
+  "role": ["admin"]
+}

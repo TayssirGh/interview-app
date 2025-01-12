@@ -22,4 +22,3 @@ public class InterviewApplication implements NApplication {
         out.println("Let's get it started \uD83D\uDE80\uD83D\uDE80");
     }
 }
-

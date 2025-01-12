@@ -39,10 +39,10 @@ public class WebJwtAppTokenGenerator implements AppTokenGenerator {
         .signWith(key(), SignatureAlgorithm.HS256)
         .compact();
   }
-  
+
   private Key key() {
     String secret= NLiteral.of(confService.getConfValue("security.jwt","secret").orNull())
-            .asString().orElse("jwt-is-awesome#");
+            .asString().orElse("3e58950f9b875dddf66b25bd1b846e78c8c2bb923ee8cbd7f72695aefb626be3");
     return Keys.hmacShaKeyFor(Decoders.BASE64.decode(secret));
   }
 
