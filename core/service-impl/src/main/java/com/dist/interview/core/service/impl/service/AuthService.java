@@ -1,5 +1,8 @@
 package com.dist.interview.core.service.impl.service;
 
+import com.dist.interview.core.model.payload.VersionResponse;
+import com.dist.interview.core.service.api.CoreModule;
+import jakarta.validation.constraints.NotNull;
 import net.thevpc.nuts.util.NOptional;
 import com.dist.interview.core.model.common.AppException;
 import com.dist.interview.core.model.entity.AppUser;
@@ -23,7 +26,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-public class AuthService {
+public class AuthService implements CoreModule {
     @Autowired
     @Lazy
     private AppUserService appUserService;
@@ -36,7 +39,7 @@ public class AuthService {
 
     @Autowired
     private AppTokenGenerator appTokenGenerator;
-
+    @Override
     public AppPrincipalResponse login(LoginRequest loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
@@ -56,11 +59,16 @@ public class AuthService {
                 roles);
     }
 
+    @Override
+
     public void signup(SignupRequest signUpRequest) {
         NOptional<AppUser> userByNameOrEmail = appUserService.findUserByNameOrEmailWithPassword(signUpRequest.getUsername(), signUpRequest.getEmail());
         if (userByNameOrEmail.isPresent()) {
             throw new AppException("A001", "Username or email already in use");
         }
+
+
+        System.out.println("Creating new user with username: " + signUpRequest.getUsername());
 
         AppUser user = new AppUser()
                 .setUsername(signUpRequest.getUsername())
@@ -81,6 +89,10 @@ public class AuthService {
         }
         user.setRoles(roles);
         appUserService.addUser(user);
+    }
+    @Override
+    public VersionResponse version() {
+        return new VersionResponse();
     }
 
 

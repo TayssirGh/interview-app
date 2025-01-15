@@ -24,7 +24,7 @@
         <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
 
 
-        <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-autoconfigure</artifactId></dependency>
+        <!--        <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-autoconfigure</artifactId></dependency>-->
         <dependency><groupId>net.thevpc.nuts.lib</groupId><artifactId>nlib-spring-boot</artifactId><version>0.8.5.0</version></dependency>
         <dependency><groupId>net.thevpc.nuts</groupId><artifactId>nuts-api</artifactId><version>0.8.5</version></dependency>
         <dependency><groupId>net.thevpc.nuts</groupId><artifactId>nuts-runtime</artifactId><version>0.8.5.0</version></dependency>
@@ -42,12 +42,20 @@
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
 
         <!--################################################## core modules #################################################################-->
-<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-infra</artifactId><version>1.0.0</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-dal</artifactId><version>1.0.0</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-ws-rest</artifactId><version>1.0.0</version></dependency>-->
+        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-infra</artifactId><version>1.0.0</version></dependency>-->
+        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-dal</artifactId><version>1.0.0</version></dependency>-->
+        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version></dependency>-->
+        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>-->
+        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-ws-rest</artifactId><version>1.0.0</version></dependency>-->
         <!--################################################## core modules #################################################################-->
+
+        <!--################### these are my javacc dependencies (rajet) feel free to comment them for now ##################################-->
+<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-dal</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-service-impl</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+        <!--################### these are my javacc dependencies (rajet) feel free to comment them for now ##################################-->
+
     </dependencies>
     <repositories>
         <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>

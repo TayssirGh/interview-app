@@ -6,12 +6,17 @@ import com.dist.interview.core.service.impl.service.AppUserService;
 import lombok.experimental.Delegate;
 import org.springframework.stereotype.Service;
 
+
 @Service
-public class CoreModuleImpl implements CoreModule {
+public abstract class CoreModuleImpl {
     @Delegate
-    private AuthService authService;
+    private final AuthService authService;
 
     @Delegate
-    private AppUserService appUserService;
+    private final AppUserService appUserService;
 
+    public CoreModuleImpl(AuthService authService, AppUserService appUserService) {
+        this.authService = authService;
+        this.appUserService = appUserService;
+    }
 }
