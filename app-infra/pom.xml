@@ -45,5 +45,7 @@
             <url>https://maven.pkg.github.com/TayssirGh/interview-app</url>
         </repository>
     </distributionManagement>
-
+    <repositories>
+        <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
+    </repositories>
 </project>
