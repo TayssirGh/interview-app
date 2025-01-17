@@ -11,7 +11,7 @@ This is the **entry-point project** for the overall application, providing a mod
 
 This project is designed with a modular architecture, enabling easy extension and scalability. Key modules integrated with this project include:
 
-1. **Parse2Hire**: A module for candidate parsing and response generation. [Repository URL](#replace-with-parse2hire-url)
+1. **Parse2Hire**: A module for candidate parsing and response generation. [Repository URL](https://github.com/TayssirGh/Parse2Hire)
 2. **VideoStream Module**: A video streaming module built using **Kurento** for real-time communication.
 3. **Chat Module**: A chat module leveraging **Axiom** for messaging capabilities.
 
