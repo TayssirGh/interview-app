@@ -8,7 +8,7 @@
         <version>3.3.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.dist.interview</groupId>
+    <groupId>com.distr.interview</groupId>
     <artifactId>application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>application</name>
@@ -24,37 +24,32 @@
         <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
 
 
-<!--        <dependency><groupId>net.thevpc.nuts.lib</groupId><artifactId>nlib-spring-boot</artifactId><version>0.8.5.0</version></dependency>-->
-<!--        <dependency><groupId>net.thevpc.nuts</groupId><artifactId>nuts-api</artifactId><version>0.8.5</version></dependency>-->
-<!--        <dependency><groupId>net.thevpc.nuts</groupId><artifactId>nuts-runtime</artifactId><version>0.8.5.0</version></dependency>-->
-
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
-        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
-        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-service-impl</artifactId><exclusions><exclusion><groupId>com.dist.interview</groupId><artifactId>javacc-dal-api</artifactId></exclusion></exclusions><version>0.0.1-SNAPSHOT</version></dependency>
-        <dependency><groupId>com.dist.interview</groupId><artifactId>dal</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
-        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-infra</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
-        <dependency><groupId>com.dist.interview</groupId><artifactId>javacc-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.distr.interview</groupId><artifactId>javacc-service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.distr.interview</groupId><artifactId>javacc-service-impl</artifactId><exclusions><exclusion><groupId>com.distr.interview</groupId><artifactId>javacc-dal-api</artifactId></exclusion></exclusions><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.distr.interview</groupId><artifactId>dal-mongodb</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.distr.interview</groupId><artifactId>dal-postgre</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.distr.interview</groupId><artifactId>javacc-infra</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
+        <dependency><groupId>com.distr.interview</groupId><artifactId>javacc-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
         <!--################### these are my javacc dependencies (tsts) feel free to comment them for now ##################################-->
 
-        <!--################################################## core modules #################################################################-->
-        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-infra</artifactId><version>1.0.0</version></dependency>-->
-        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-dal</artifactId><version>1.0.0</version></dependency>-->
-        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version></dependency>-->
-        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>-->
-        <!--        <dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-ws-rest</artifactId><version>1.0.0</version></dependency>-->
-        <!--################################################## core modules #################################################################-->
 
         <!--################### these are my javacc dependencies (rajet) feel free to comment them for now ##################################-->
-<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-dal</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
-<!--        <dependency><groupId>com.dist.interview.axiom-chat</groupId><artifactId>axiom-chat-service-impl</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-chat</groupId><artifactId>axiom-chat-ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-chat</groupId><artifactId>axiom-chat-service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-chat</groupId><artifactId>axiom-chat-dal</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-chat</groupId><artifactId>axiom-chat-service-impl</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
         <!--################### these are my javacc dependencies (rajet) feel free to comment them for now ##################################-->
 
+<!--        <dependency><groupId>com.distr.interview.axiom-auth</groupId><artifactId>ws-rest</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-auth</groupId><artifactId>service-api</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-auth</groupId><artifactId>service-impl</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
+<!--        <dependency><groupId>com.distr.interview.axiom-auth</groupId><artifactId>dal-axiom</artifactId><version>0.0.1-SNAPSHOT</version></dependency>-->
     </dependencies>
     <repositories>
         <repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
         <repository><id>github-p2h</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/Parse2Hire</url><snapshots><enabled>true</enabled></snapshots></repository>
         <repository><id>github-core</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/TayssirGh/interview-app</url><snapshots><enabled>true</enabled></snapshots></repository>
+        <repository><id>jade</id><name>GitHub Packages</name><url>https://maven.pkg.github.com/AdamGaida/code-evaluation</url></repository>
     </repositories>
 </project>

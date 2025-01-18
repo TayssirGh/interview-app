@@ -8,7 +8,7 @@
         <version>3.4.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.dist.interview</groupId>
+    <groupId>com.distr.interview</groupId>
     <artifactId>app-infra</artifactId>
     <version>0.0.1</version>
     <name>app-infra</name>

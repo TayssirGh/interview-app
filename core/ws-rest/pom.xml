@@ -8,12 +8,12 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dist.interview.core</groupId>
+	<groupId>com.distr.interview.core</groupId>
 	<artifactId>interview-core-ws-rest</artifactId>
 	<version>1.0.0</version>
 
 	<dependencies>
-		<dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>
+		<dependency><groupId>com.distr.interview.core</groupId><artifactId>interview-core-service-impl</artifactId><version>1.0.0</version></dependency>
 		<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></dependency>
 		<dependency><groupId>org.postgresql</groupId><artifactId>postgresql</artifactId><scope>runtime</scope></dependency>
 		<dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
@@ -23,7 +23,7 @@
 		<dependency><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-impl</artifactId><version>0.11.5</version><scope>runtime</scope></dependency>
 
 		<dependency><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-jackson</artifactId><version>0.11.5</version><scope>runtime</scope></dependency>
-		<dependency><groupId>com.dist.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version><scope>compile</scope></dependency>
+		<dependency><groupId>com.distr.interview.core</groupId><artifactId>interview-core-service-api</artifactId><version>1.0.0</version><scope>compile</scope></dependency>
 
 	</dependencies>
 	<distributionManagement>

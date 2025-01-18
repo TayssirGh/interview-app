@@ -8,7 +8,7 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dist.interview.core</groupId>
+	<groupId>com.distr.interview.core</groupId>
 	<artifactId>interview-core-infra</artifactId>
 	<version>1.0.0</version>
 
